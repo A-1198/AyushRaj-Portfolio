@@ -1,4 +1,5 @@
 import React from "react";
+import {SiGmail} from 'react-icons/si'
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
 <br/> 
 <br/> 
 <br/> 
-    <a href="mailto:ayushrajpandey1198@gmail.com" className="flex flex-row p-4 items-center max-w-screen-lg mx-auto bg-gray-900 ">&nbsp; ayushrajpandey1198@gmail.com</a>
+    <a href="mailto:ayushrajpandey1198@gmail.com" className="flex flex-row p-4 items-center max-w-screen-lg mx-auto bg-gray-900 "><SiGmail size={30}/>&nbsp; ayushrajpandey1198@gmail.com</a>
      
       
       </div>

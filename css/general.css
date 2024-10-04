@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family:"Poppins",sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6rem;
+  row-gap: 10rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: rem;
+}
+
+.container.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+
+.heading-primary {
+  font-size: 5rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  text-align: center;
+}
+
+
+
+/*NAV*/
+
+
+.section-hero {
+  padding-top: 70px; 
+  padding-bottom: 6.4rem; 
+}
+
+@media (max-width: 768px) {
+  .section-hero {
+    padding-top: 60px;
+  }
+
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: white; 
+  padding: 1rem; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+  height: 50px; 
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav-list {
+  display: flex; 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.main-nav-link {
+  margin: 0 1rem;
+  text-decoration: none; 
+  color: #333;
+}
+
+.btn-mobile-nav {
+  display: none; 
+}
+}
+@media (max-width: 768px) {
+  .btn-mobile-nav {
+    display: block; 
+  }
+
+  .main-nav {
+    display: none; 
+  }
+
+  .header.nav-open .main-nav {
+    display: flex; 
+    flex-direction: column; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem; 
+    z-index: 999; 
+    overflow-y: auto; /* Allow scrolling */
+  }
+}

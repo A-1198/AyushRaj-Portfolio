@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="My Portfolio "/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png">
+  <link rel="manifest" href="src/site.webmanifest">
+  <title>Ayush's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/queries.css"/>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#">
+      <img class="logo" src="src/logo.png"/>
+    </a>
+  
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link nav-cta" href="#home">Home</a></li>
+      <li><a class="main-nav-link nav-cta" href="#about">About</a></li>
+      <li><a class="main-nav-link nav-cta" href="#projects">Projects</a></li>
+      <li><a class="main-nav-link nav-cta" href="#skills">Skills</a></li>
+      <li><a class="main-nav-link nav-cta" href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+  </button>
+</header>
+
+<main>
+  <section class="section-hero" id="home">
+    <div class="hero">
+      <div class="hero-text-box">
+        <h1 class="heading-primary">
+          <strong style="color: #3375a7;">Miles</strong> to go before I <strong style="color: #3375a7;">Sleep!!</strong>
+        </h1>
+        <p class="hero-description">
+          Hello I am <strong style="color: #3375a7;">Ayush Raj !! , an aspiring Web Developer</strong>  who wants to make it big in the industry :) 
+        </p>
+        <div class="hero-icons">
+          <a href="https://github.com/A-1198" class="hero-icon" id="github" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/ayush-raj-0a30891a0/" class="hero-icon" id="linkedin" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/ayushraj_1198/" class="hero-icon" id="instagram" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://drive.google.com/file/d/1JecQ9JyMxJQpR0SKgxjSA7IoxmPPfiKB/view?usp=sharing" class="hero-icon" id="resume" target="_blank">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="hero-img-box">
+        <img src="src/hero-withoutbg.png" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-about" id="about">
+    <div class="container center-text">
+      <h2 class="heading-secondary">
+        “Code is like <strong style="color: #3375a7;">HUMOR</strong>. When you have to <strong style="color: #3375a7;">explain</strong> it, it’s <strong style="color: #3375a7;">bad</strong>.”
+      </h2>      
+    </div>
+    <div class="container grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="laptop-outline"></ion-icon>
+            <p class="feature-title">Student</p>
+            <p class="feature-text">
+                Yes.. still learning and exploring .. never stopping that!!
+            </p>
+        </div>
+        <div class="feature">
+            <ion-icon class="feature-icon" name="code-slash"></ion-icon>
+            <p class="feature-title">Front End Dev</p>
+            <p class="feature-text">
+                Can build responsive and innovative websites for clients using various stacks.
+            </p>
+        </div>
+        <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">Back End Dev</p>
+            <p class="feature-text">
+              Integrate server-side components  with complex logic
+              that users indirectly access.
+            </p>
+        </div>
+        <div class="feature">
+            <ion-icon class="feature-icon" name="logo-stackoverflow"></ion-icon>
+            <p class="feature-title">Tech Enthusiast</p>
+            <p class="feature-text">
+                Like to explore new techs especially the field of AI and ML.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="section-projects" id="projects">
+  <div class="container center-text">
+    <h2 class="heading-secondary">
+      “Things I've <strong style="color: #3375a7;">WORKED</strong> upon."
+    </h2>      
+  </div>
+  <div class="container grid grid--3-cols">
+    <div class="project" id="project-1">
+      <figure class="project-icon">
+        <img src="src/workout.png" alt="Workout Buddy Icon">
+      </figure>
+      <p class="project-title" >WORKOUT BUDDY</p>
+      <p class="project-description">
+        Workout Buddy is a real-time MERN-stack app for tracking exercises. 
+        It includes secure JWT authentication and supports basic CRUD operations,
+        enabling users to manage their workouts effortlessly.
+      </p>
+    </div>
+    <div class="project" id="project-2">
+      <figure class="project-icon">
+        <img src="src/library.png" alt="Library Management Icon">
+      </figure>
+      <p class="project-title">LIBRARY MANAGEMENT SYSTEM</p>
+      <p class="project-description">
+     Designed a Library Management System in pure JAVA with admin and librarian login/signup, using AWT & Swing 
+     for a user-friendly interface and database connectivity for managing books and librarian records efficiently.
+      </p>
+    </div> 
+    <div class="project" id="project-3">
+      <figure class="project-icon">
+        <img src="src/shopping.png" alt="Shopping Icon">
+      </figure>
+      <p class="project-title">SHOPPING WITH AYUSH</p>
+      <p class="project-description">
+        Developed a shopping cart system using PHP and MySQL via XAMPP server, 
+        featuring an interactive Address and Billing System with enhanced UI/UX design.
+      </p>
+    </div> 
+    <div class="project" id="project-4">
+      <figure class="project-icon">
+        <img src="src/omnifood,png.png" alt="Omnifood Icon">
+      </figure>
+      <p class="project-title">OMNIFOOD WEBSITE</p>
+      <p class="project-description">
+        Built a responsive Food Delivery System using only HTML and CSS. 
+        Combined web design principles and components,optimizing the site for all device types 
+        through the use of media queries.
+      </p>
+    </div> 
+    <div class="project" id="project-5">
+      <figure class="project-icon">
+        <img src="src/sentimental.png" alt="Sentimental Analysis Icon">
+      </figure>
+      <p class="project-title">Sentimental Analysis</p>
+      <p class="project-description">
+        Implemented sentiment analysis on 50k IMDb reviews using ML and DL models, 
+        achieving over 85% accuracy with preprocessing, Bag of Words, and TF-IDF.
+         Developed a user-friendly GUI for review input and sentiment prediction.
+      </p>
+    </div>  
+    <div class="project"  id="project-6">
+      <figure class="project-icon">
+        <img src="src/blog.png" alt="Mini BLog Icon">
+      </figure>
+      <p class="project-title">Ayush's Mini Blog</p>
+      <p class="project-description">
+        Created a blog list application to add, view, and delete blogs, 
+        as an exercise to gain familiarity with React's core concepts and functionality.
+      </p>
+    </div> 
+  </div>
+</section>
+<section class="section-skills" id="skills">
+  <div class="container center-text">
+    <h2 class="heading-secondary">
+      “<strong style="color: #3375a7;">Skills</strong> and <strong style="color: #3375a7;">Programming</strong> Languages."
+    </h2>      
+  </div>
+  <div class="container grid grid--4-cols">
+    <div class="skill">
+      <img src="src/html-5.png" alt="HTML5">
+      <p class="skill-name">HTML</p>
+    </div>
+    <div class="skill">
+      <img src="src/css.png" alt="CSS">
+      <p class="skill-name">CSS</p>
+    </div>
+    <div class="skill">
+      <img src="src/js.png" alt="JavaScript">
+      <p class="skill-name">JavaScript</p>
+    </div>
+    <div class="skill">
+      <img src="src/php.png" alt="PHP">
+      <p class="skill-name">PHP</p>
+    </div>
+    <div class="skill">
+      <img src="src/react.png" alt="React">
+      <p class="skill-name">React</p>
+    </div>
+    <div class="skill">
+      <img src="src/node.png" alt="Node.js">
+      <p class="skill-name">Node.js</p>
+    </div>
+    <div class="skill">
+      <img src="src/laravel.png" alt="Laravel">
+      <p class="skill-name">Laravel</p>
+    </div>
+    <div class="skill">
+      <img src="src/wordpress.png" alt="WordPress">
+      <p class="skill-name">WordPress</p>
+    </div>
+    <div class="skill">
+      <img src="src/mysql.png" alt="MySQL">
+      <p class="skill-name">MySQL</p>
+    </div>
+    <div class="skill">
+      <img src="src/mongoDB.png" alt="MongoDB">
+      <p class="skill-name">MongoDB</p>
+    </div>
+    <div class="skill">
+      <img src="src/github.png" alt="GitHub">
+      <p class="skill-name">GitHub</p>
+    </div>
+    <div class="skill">
+      <img src="src/Postman_(software).png" alt="Postman">
+      <p class="skill-name">Postman</p>
+    </div>
+    <div class="skill">
+      <img src="src/java.png" alt="Java">
+      <p class="skill-name">Java</p>
+    </div>
+    <div class="skill">
+      <img src="src/c-.png" alt="C#">
+      <p class="skill-name">C++</p>
+    </div>
+    <div class="skill">
+      <img src="src/python.png" alt="Python">
+      <p class="skill-name">Python</p>
+    </div>
+    <div class="skill">
+      <img src="src/linux.png" alt="Linux">
+      <p class="skill-name">Linux</p>
+    </div>
+  </div>
+</section>
+<section class="section-contact" id="contacts">
+  <div class="container center-text">
+    <h2 class="heading-secondary">
+      “Lets have a <strong style="color: #3375a7;">COFFEE</strong> and <strong style="color: #3375a7;">DISCUSS</strong>."
+    </h2>      
+  </div>
+  <div class="contact-mail">
+    <a class="contact" href="mailto:ayushrajpandey1198@gmail.com">
+      <ion-icon class="contact-icon" name="mail-unread-outline"></ion-icon>
+      <p class="contact-title">ayushrajpandey1198@gmail.com</p>
+      </a>
+  </div>  
+</section>
+</main>
+<footer class="footer">
+  <p>&copy; Ayush Raj 2024 All rights reserved.</p>
+</footer>
+</body>
+</html>
